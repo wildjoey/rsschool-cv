@@ -15,10 +15,10 @@ Now it is Java, but before that I had quite a lot of experience in C/C++ embedde
 public class LifeconnectAnalyzerConfigJMS {
     @Bean
     public MessageConverter jacksonJmsMessageConverter(){
-        MappingJackson2MessageConverter converter =  
+        MappingJackson2MessageConverter converter =
                 new MappingJackson2MessageConverter();
-        
-        converter.setTargetType(MessageType.TEXT);        
+
+        converter.setTargetType(MessageType.TEXT);
         converter.setTypeIdPropertyName("_class_");
         return converter;
     }
